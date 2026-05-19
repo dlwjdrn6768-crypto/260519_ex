@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags Layout</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        main {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        section h2 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            color: #2c3e50;
+        }
+        article {
+            background-color: #fafafa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3498db;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 웹 사이트의 머리글 (로고, 메인 제목 등) -->
+    <header>
+        <header>헤더 (Header) - 로고 및 사이트 제목</header>
+    </header>
+
+    <!-- 내비게이션 링크 -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- 메인 콘텐츠 영역 -->
+        <main>
+            <!-- 의미 있는 콘텐츠 그룹 -->
+            <section>
+                <h2>섹션 (Section) - 주제별 영역</h2>
+                
+                <!-- 독립적으로 읽힐 수 있는 콘텐츠 -->
+                <article>
+                    <h3>아티클 1 (Article)</h3>
+                    <p>본문 내용이 들어가는 독립적인 영역입니다. 블로그 글이나 뉴스 기사 등에 사용됩니다.</p>
+                </article>
+                
+                <article>
+                    <h3>아티클 2 (Article)</h3>
+                    <p>마찬가지로 독립적으로 배포될 수 있는 콘텐츠를 담습니다.</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- 사이드바 등 본문과 간접적으로 연관된 영역 -->
+        <aside>
+            <h2>사이드바 (Aside)</h2>
+            <p>광고, 추천 링크, 추가 정보 등을 배치하는 곳입니다.</p>
+        </aside>
+    </div>
+
+    <!-- 웹 사이트의 바닥글 (저작권, 연락처 등) -->
+    <footer>
+        <p>푸터 (Footer) - 저작권 정보 및 사이트 맵 © 2026</p>
+    </footer>
+
+</body>
+</html>
